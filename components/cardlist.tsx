@@ -1,7 +1,7 @@
-import fs from 'fs'
-import styles from '/styles/Posts.module.css'
+import fs from 'fs';
+import styles from '/styles/Posts.module.css';
 
-const cardList = ({ id }, title) => {
+const CardList = ({ id }, title : any) => {
     return (
         <div className={styles.grid}>
 
@@ -29,4 +29,4 @@ export const getStaticProps = async () => {
 	}
 }
 
-export default cardList
+export default CardList
