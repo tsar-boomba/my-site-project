@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import styles from '/styles/Home.module.css'
 
-const Home = ({ id }: any) => {
+const Posts = ({ id }: any) => {
 	return (
 		<div className={styles.container}>
 		<Head>
@@ -50,4 +50,4 @@ export const getStaticProps = async () => {
 	}
 }
 
-export default  Home;
+export default  Posts;
