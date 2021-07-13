@@ -41,6 +41,7 @@ const Posts = ({ id }: any) => {
 	)
 }
 
+//function gets post files' names to be linked to
 export const getStaticProps = async () => {
 	const files = fs.readdirSync('posts')
 	return {

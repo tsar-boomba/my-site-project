@@ -25,6 +25,7 @@ const Post = ({ htmlString, data }: any) => {
     )
 };
 
+//gets posts files' paths and returns them as id object without .md
 export const getStaticPaths = async () => {
     
     const files = fs.readdirSync('posts');
@@ -40,6 +41,7 @@ export const getStaticPaths = async () => {
     }
 }
 
+//this function takes the file paths and goes from raw md => md w/o meta data at top => raw html, returns the html as htmlString and the meta data as data
 export const getStaticProps = async ({ params: { id } }: any) => {
 
     const markdownWithMetadata = fs.readFileSync(path.join('posts', id + '.md')).toString();
