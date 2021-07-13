@@ -106,11 +106,13 @@
   width: 100%;
 }
 
+.card a,
 .listcard a {
   color: #ADD8E6;
   text-decoration: underline;
 }
 
+.card a:hover,
 .listcard a:hover{
   color: #eaeaea;
 }
