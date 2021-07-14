@@ -10,18 +10,6 @@
   color: #eaeaea;
 }
 
-.rowtainer {
-  min-height: 100vh;
-  padding: 0 0.5rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  align-content: flex-start;
-  height: 100%;
-  color: #eaeaea;
-}
-
 .main {
   padding: 5rem 0;
   flex: 1;
@@ -73,12 +61,6 @@
 .description {
   line-height: 1.5;
   font-size: 1.5rem;
-}
-
-.profilepic{
-  flex: none;
-  max-width: 100px;
-  max-height: 100px;
 }
 
 .code {
@@ -135,7 +117,7 @@
   color: #eaeaea;
 }
 
-.listcard:hover,
+/* .listcard:hover,
 .listcard:focus,
 .listcard:active,
 .card:hover,
@@ -143,7 +125,7 @@
 .card:active {
   color: #FFA500;
   border-color: #FFA500;
-}
+} */
 
 .listcard h2,
 .card h2 {

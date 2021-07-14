@@ -2,7 +2,7 @@ import fs from 'fs'
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
-import styles from '/styles/Home.module.css'
+import styles from '/styles/Projects.module.css'
 
 const Projects = ({ id }: any) => {
 	return (
@@ -19,7 +19,7 @@ const Projects = ({ id }: any) => {
 			</h1>
 
 			<div className={styles.grid}>
-                    <a href='/' className={styles.card}>
+                    <a className={styles.card}>
                         <h1>Resume Site</h1>
                         <p>This site! The purpose of this project is the create a site that can be navigated to understand me. The value I&#39;ll bring to your team and just general information about me. Check out the Github repository for this site <a href='https://github.com/tsar-boomba/my-site-project'>here.</a></p>
                     </a>

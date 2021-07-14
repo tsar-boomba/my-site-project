@@ -1,5 +1,4 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-require('dotenv').config()
 import querystring from 'querystring';
 
 const clientId = process.env.SPOTIFY_CLIENT_ID;
@@ -20,7 +19,7 @@ const getAccessToken = async () => {
     },
     body: querystring.stringify({
       grant_type: 'refresh_token',
-      refreshToken
+      refresh_token: refreshToken
     })
   });
 

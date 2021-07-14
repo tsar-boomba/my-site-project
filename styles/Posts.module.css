@@ -92,13 +92,13 @@
     transition: color 0.15s ease, border-color 0.15s ease;
     width: 100%;
   }
-  
-  .card:hover,
+
+  /* .card:hover,
   .card:focus,
   .card:active {
     color: #FFA500;
     border-color: #FFA500;
-  }
+  } */
   
   .card h2 {
     margin: 0 0 1rem 0;

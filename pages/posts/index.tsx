@@ -22,6 +22,8 @@ const Posts = ({ id }: any) => {
 
 				<a key={id} className={styles.listcard}>
 					<h2>Posts</h2>
+					{// this makes a link to each post for every file path returned in getStaticProps
+}
 						{id.map(id => {
 							return (
 									<div key={id}>
