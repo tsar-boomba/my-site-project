@@ -1,10 +1,11 @@
-import styles from '/styles/Home.module.css'
+import styles from '/styles/Music.module.css'
+import Image from 'next/image'
 
 const Track = (track) => {
 	return (
 		
 	<a className={styles.card} href={track.songUrl}>
-		<h3>{track.ranking}  {track.title} by {track.artist}</h3>
+		<Image src={track.imageUrl} width='64' height='64' alt='track image'/><h3>{track.ranking}  {track.title} by {track.artist}</h3>
 	</a>
 
 	)

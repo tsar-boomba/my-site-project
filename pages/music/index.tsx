@@ -4,8 +4,9 @@ import Image from 'next/image'
 import Link from 'next/link'
 import styles from '/styles/Home.module.css'
 import TopTracks from '../../components/TopTracks'
+import NowPlaying from '../../components/NowPlaying'
 
-const Music = ({ tracks }: any) => {
+const Music = () => {
 	return (
 		<div className={styles.container}>
 		<Head>
@@ -24,7 +25,9 @@ const Music = ({ tracks }: any) => {
 			</div>
 
 		</main>
-
+			{/* <div>
+				<NowPlaying />
+			</div> */}
 		</div>
 	)
 }

@@ -37,6 +37,11 @@ const Home = ({ id }: any) => {
 						<p>Check out the cool stuff I&#39;ve done</p>
 					</a>
 
+					<a href="https://github.com/tsar-boomba" className={styles.card}>
+						<h2>GitHub &rarr;</h2>
+						<p>Check out the source code for all of the stuff I&#39;ve done</p>
+					</a>
+
 				</div>
 
 			</main>

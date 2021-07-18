@@ -1,13 +1,15 @@
 import { getTopTracks } from '../api/spotify';
 
 const handler = async (_, res) => {
-  const response = await getTopTracks();
+  const yomama = await getTopTracks();
+  const response = await yomama[0];
   const { items } = await response.json();
 
   const tracks = items.slice(0, 10).map((track) => ({
     artist: track.artists.map((_artist) => _artist.name).join(', '),
     songUrl: track.external_urls.spotify,
-    title: track.name
+    title: track.name,
+    imageUrl: track.album.images[2].url
   }));
 
   res.setHeader(
