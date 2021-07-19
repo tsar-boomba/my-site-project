@@ -42,11 +42,13 @@ export const getTopTracks = async () => {
 
   for (let i = 0; i < 3; i++) {
     timeFrame.push(fetch(TOP_TRACKS_ENDPOINT[i], {
-    headers: {
-      Authorization: `Bearer ${access_token}`
-    }
-  }));
-};
+      headers: {
+        Authorization: `Bearer ${access_token}`
+      }
+    }));
+  };
 
-  return timeFrame;
+  console.log(timeFrame);
+
+  return { timeFrame };
 };
