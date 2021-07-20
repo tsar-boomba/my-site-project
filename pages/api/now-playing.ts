@@ -17,11 +17,11 @@ const handler = async (_, res) => {
     const artist = song.item.artists.map((_artist) => _artist.name).join(', ')
     const songUrl = song.item.external_urls.spotify
     const title = song.item.name
-    const imageUrl = song.item.album.images[2].url
+    const imageUrl = song.item.album.images[0].url
 
     res.setHeader(
         'Chache-Control',
-        'public, s-maxage=86400, stale-while-revalidate=43200'
+        'public, s-maxage=100, stale-while-revalidate=200'
     )
 
     return res.status(200).json({ artist, title, songUrl, imageUrl, isPlaying })

@@ -2,11 +2,13 @@ import fs from 'fs'
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
+import Footer from '../components/Footer'
 import styles from '../styles/Home.module.css'
 import profilePic from '/public/profilePic.jpg'
 
 const Home = ({ id }: any) => {
 	return (
+		<>
 		<div className={styles.rowtainer}>
 			<div className={styles.container}>
 			<Head>
@@ -46,13 +48,11 @@ const Home = ({ id }: any) => {
 
 			</main>
 			</div>
-			<div className={styles.container}>
-				<div className={styles.card}>
-					<h1>Menu</h1>
-					<li>This will be a menu</li>
-				</div>
-			</div>
 		</div>
+			<div className={styles.footer}>
+				<Footer />
+			</div>
+		</>
 	)
 }
 

@@ -36,19 +36,12 @@ export const getNowPlaying = async () => {
   });
 };
 
-export const getTopTracks = async () => {
+export const getTopTracks = async (x) => {
   const { access_token } = await getAccessToken();
-  const timeFrame = [];
 
-  for (let i = 0; i < 3; i++) {
-    timeFrame.push(fetch(TOP_TRACKS_ENDPOINT[i], {
-      headers: {
-        Authorization: `Bearer ${access_token}`
-      }
-    }));
-  };
-
-  console.log(timeFrame);
-
-  return { timeFrame };
+  return fetch(TOP_TRACKS_ENDPOINT[x], {
+    headers: {
+      Authorization: `Bearer ${access_token}`
+    }
+  })
 };

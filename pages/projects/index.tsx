@@ -2,10 +2,12 @@ import fs from 'fs'
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
+import Footer from '../../components/Footer'
 import styles from '/styles/Projects.module.css'
 
 const Projects = ({ id }: any) => {
 	return (
+		<>
 		<div className={styles.container}>
 		<Head>
 			<title>Projects</title>
@@ -25,12 +27,14 @@ const Projects = ({ id }: any) => {
                     </a>
 
 			</div>
-			<div className={styles.container}>
-				
-			</div>
+
 		</main>
 
 		</div>
+			<div className={styles.footer}>
+				<Footer />
+			</div>
+		</>
 	)
 }
 

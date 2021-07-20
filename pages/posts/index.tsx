@@ -2,10 +2,12 @@ import fs from 'fs'
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
+import Footer from '../../components/Footer'
 import styles from '/styles/Home.module.css'
 
 const Posts = ({ id }: any) => {
 	return (
+		<>
 		<div className={styles.container}>
 		<Head>
 			<title>Posts</title>
@@ -34,12 +36,14 @@ const Posts = ({ id }: any) => {
 				</a>
 
 			</div>
-			<div className={styles.container}>
-				
-			</div>
+
 		</main>
 
 		</div>
+		<div className={styles.footer}>
+			<Footer />
+		</div>
+		</>
 	)
 }
 
