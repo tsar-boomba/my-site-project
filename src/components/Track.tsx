@@ -1,4 +1,4 @@
-import styles from '/styles/Music.module.css'
+import styles from '../styles/Music.module.css'
 import Image from 'next/image'
 
 const Track = (track) => {

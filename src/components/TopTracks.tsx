@@ -1,7 +1,7 @@
 import useSWR from "swr"
 import fetcher from '../pages/api/Fetcher'
-import Track from '../components/Track'
-import styles from '/styles/Music.module.css'
+import Track from './Track'
+import styles from '../styles/Music.module.css'
 
 const TopTracks = ( {iterator} ) => {
     const { data, revalidate } = useSWR('/api/top-tracks', fetcher)

@@ -1,4 +1,4 @@
-import { getTopTracks } from '../api/spotify';
+import { getTopTracks } from './spotify';
 
 const handler = async (_, res) => {
 	const frames = []

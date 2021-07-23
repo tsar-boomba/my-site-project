@@ -1,4 +1,4 @@
-import styles from '/styles/Music.module.css'
+import styles from '../styles/Music.module.css'
 import Image from 'next/image'
 import useSWR from 'swr'
 import fetcher from '../pages/api/Fetcher'

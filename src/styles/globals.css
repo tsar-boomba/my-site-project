@@ -7,6 +7,11 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+@font-face {
+  font-family: 'Pixel';
+  src: url('/src/font/Pixel-LCD-7.woff') format('woff');
+}
+
 a {
   color: inherit;
   text-decoration: none;

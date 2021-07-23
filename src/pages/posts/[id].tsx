@@ -5,7 +5,7 @@ import matter from "gray-matter";
 import marked from "marked";
 import { GetStaticProps, GetStaticPaths } from 'next';
 import head from "next/head";
-import styles from '/styles/Posts.module.css';
+import styles from '../../styles/Posts.module.css';
 import Head from "next/head";
 
 const Post = ({ htmlString, data }: any) => {

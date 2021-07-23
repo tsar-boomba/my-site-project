@@ -3,7 +3,7 @@ import { useState } from 'react';
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
-import styles from '/styles/Music.module.css'
+import styles from '../../styles/Music.module.css'
 import TopTracks from '../../components/TopTracks'
 import NowPlaying from '../../components/NowPlaying'
 import Footer from '../../components/Footer';
@@ -11,20 +11,20 @@ import Footer from '../../components/Footer';
 var x = 0;
 
 const Music = () => {
-	const [state, setstate] = useState(x)
+	const [state, setState] = useState(0)
 	const terms = ['Long Term', 'Medium Term', 'Short Term']
 
 	const changeState = () => {
-		if(x <= 1) {
-			setstate(x += 1);
+		if(state <= 1) {
+			setState(state + 1);
 		} else {
 			x = 0;
-			setstate(x);
+			setState(0);
 		}
 	};
 
 	return (
-		<>
+	<>
 		<div className={styles.container}>
 			<Head>
 				<title>Music</title>
@@ -38,7 +38,7 @@ const Music = () => {
 				Top 10 Tracks
 				</h1>
 
-				<button onClick={changeState} className={styles.button} type='button'>Change Time Frame</button>
+				<button onClick={changeState} className={styles.button} type='button'>{terms[state]}</button>
 
 				<TopTracks iterator={state} />
 			

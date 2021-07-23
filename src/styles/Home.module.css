@@ -161,6 +161,15 @@
   margin: 1rem;
 }
 
+.tetris {
+  align-self: flex-start;
+  text-decoration: underline;
+}
+
+.tetris:hover {
+  color:#FFA500;
+}
+
 @media (max-width: 600px) {
   .grid {
     width: 95%;
